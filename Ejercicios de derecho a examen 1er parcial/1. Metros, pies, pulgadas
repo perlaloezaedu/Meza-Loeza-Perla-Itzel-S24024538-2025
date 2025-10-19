@@ -1,0 +1,13 @@
+import java.util.Scanner;
+  public class MetrosPiesPulgadas{
+  public static void main (String[] args){
+  Scanner sc = new Scanner (System.in);
+  System.out.print("BIENVENIDO AL PROGRAMA CONVERTIDOR DE METROS A PIES Y PULGADAS");
+  System.out.print("Ingresa los metros");
+  metros = sc.nextDouble();
+  pies = metros * 3.28024;
+  pul = metros * 38.3701
+  System.out.println("Los metros ingresados equivalen a:");
+  System.out.println("Pies:" + pies);
+  System.out.println("Pulgadas" + pul);
+  }}
