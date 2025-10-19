@@ -1,6 +1,7 @@
 import java.util.Scanner;
   public class MetrosPiesPulgadas{
   public static void main (String[] args){
+  double metros, pies, pul;
   Scanner sc = new Scanner (System.in);
   System.out.print("BIENVENIDO AL PROGRAMA CONVERTIDOR DE METROS A PIES Y PULGADAS");
   System.out.print("Ingresa los metros");
