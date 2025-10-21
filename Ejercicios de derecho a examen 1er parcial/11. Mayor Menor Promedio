@@ -1,0 +1,35 @@
+import java.util.Scanner;
+	public class MayorMenorPromedio {
+	public static void main (String[] args){
+	Scanner sc = new Scanner (System.in);
+	double a, b, c, may, men, prom;
+	System.out.println("Ingrese 3 valores numerios para determinar cual es mayor, menor, iguales y su promedio");
+	System.out.println("Ingrese el primer valor");
+	a = sc.nextDouble();
+	System.out.println("Ingrese el segundo valor");
+	b = sc.nextDouble();
+	System.out.println("Ingrese el tercer valor");
+	c = sc.nextDouble();
+	prom = (a + b + c) / 3;
+		if (a == b && b == c) {
+            System.out.println("Los tres valores son iguales");
+       		}else {
+            if (a > b && a > c)
+                may = a;
+            else if (b > c)
+                may = b;
+            else
+                may = c;
+            if (a < b && a < c)
+                men = a;
+            else if (b < c)
+                men = b;
+            else
+                men = c;
+
+            System.out.println("El mayor es: " + may);
+            System.out.println("El menor es: " + men);
+            System.out.println("El promedio es: " + prom);
+		}
+	}
+	}
