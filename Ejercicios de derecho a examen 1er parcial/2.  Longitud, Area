@@ -1,0 +1,15 @@
+import java.util.Scanner;
+  public class LongitudArea {
+  public static void main (String[] args){
+  Scanner sc = new Scanner (System.in);
+  double radio, longitud, area;
+  System.out.println("Este programa calculara la longitud y area de un circulo mediante el radio obtenido");
+  System.out.println("¿Cual es el radio? ");
+  radio = sc.nextDouble();
+  longitud = 2 * 3.1416 * radio;
+  area = 3.1416 * radio * radio; 
+  System.out.println("La longitud del circulo es: " + longitud);
+  System.out.println("El area del circulo es: " + area);
+  }
+  }
+  
