@@ -1,0 +1,12 @@
+import java.util.Scanner;
+  public class Salario{
+  public static void main (String[] args){
+  Scanner sc = new Scanner (System.in);
+  double sal, salN,
+  System.out.println("Se calculara su nuevo salario"); 
+  System.out.println("¿Cual era su salario anterior? ");
+  sal = sc.nextDouble;
+  salN = (.25 * sal) - sal;
+  System.out.println("Su nuevo salario es: " + salN);
+  }
+  }
