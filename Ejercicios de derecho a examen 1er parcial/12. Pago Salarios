@@ -1,0 +1,29 @@
+import java.util.Scanner;
+	public class PagoSalarios {
+	public static void main (String[] args){
+	Scanner sc = new Scanner (System.in);
+	int cat;
+	double horas, salarioHora = 0, sueldo, descuento, total;
+	System.out.println("Se mostrata el salario correspondiente de cada empleado según su categoria y horas trabajadas");
+	System.out.println("Ingrese la categoria");
+	cat = sc.nextInt();
+	System.out.println("Ingrese la cantidad de horas trabajadas");
+	horas = sc.nextDouble();
+		if (cat == 1)
+		salarioHora = 20000 / 160;
+		else if (cat == 2)
+		salarioHora = 15000 / 160;
+		else if (cat == 3)
+		salarioHora = 10000 / 160;
+		else if (cat == 4)
+		salarioHora = 7500 / 160;
+
+	sueldo = salarioHora * horas;
+	descuento = (.072 * sueldo);
+	total = sueldo - descuento;
+		if (total > 1000000)
+            total = total - (total * 0.15);
+
+        System.out.println("El sueldo final es: " + total);
+	}
+	}
